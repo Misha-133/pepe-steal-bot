@@ -29,9 +29,9 @@ builder.ConfigureServices((host, services) =>
     services.AddSingleton(new DiscordSocketClient(
         new DiscordSocketConfig
         {
-            GatewayIntents = GatewayIntents.All,
+            GatewayIntents = GatewayIntents.None,
             FormatUsersInBidirectionalUnicode = false,
-            AlwaysDownloadUsers = true,
+            AlwaysDownloadUsers = false,
             LogGatewayIntentWarnings = false,
             LogLevel = LogSeverity.Info
         }));
@@ -40,6 +40,8 @@ builder.ConfigureServices((host, services) =>
     {
         LogLevel = LogSeverity.Info
     }));
+
+    services.AddSingleton<HttpClient>();
 
     services.AddSingleton<InteractionHandler>();
 
