@@ -1,4 +1,4 @@
-﻿namespace DiscordNetTemplate.Modules;
+﻿namespace PepeStealBot.Modules;
 
 public class CommandModule : InteractionModuleBase<SocketInteractionContext>
 {

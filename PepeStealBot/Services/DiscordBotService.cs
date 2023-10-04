@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Hosting;
 
-namespace DiscordNetTemplate.Services;
+namespace PepeStealBot.Services;
 
 public class DiscordBotService : IHostedService
 {

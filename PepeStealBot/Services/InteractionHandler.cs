@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace DiscordNetTemplate.Services;
+namespace PepeStealBot.Services;
 
 public class InteractionHandler
 {
